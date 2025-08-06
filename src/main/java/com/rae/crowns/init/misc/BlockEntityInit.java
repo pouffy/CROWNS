@@ -22,7 +22,7 @@ public class BlockEntityInit {
 
     public static final BlockEntityEntry<TurbineStageBlockEntity> TURBINE_STAGE = REGISTRATE
             .blockEntity("turbine_stage", TurbineStageBlockEntity::new)
-            .visual(() -> SingleAxisRotatingVisual.ofZ(PartialModelInit.TURBINE_STAGE))
+            .visual(() -> TurbineStageVisual::new, false)
             .validBlock(BlockInit.TURBINE_STAGE)
             .renderer(() -> TurbineStageRenderer::new)
             .register();

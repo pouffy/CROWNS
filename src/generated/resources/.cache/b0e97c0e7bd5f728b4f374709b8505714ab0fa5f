@@ -1,0 +1,15 @@
+// 1.21.1	2025-08-06T22:33:00.8380741	CROWNS' Standard Recipes
+2eda2760f4020f1086fdee221bc1bdd776a0da8e data/crowns/advancement/recipes/misc/blasting/uranium_ingot_from_ore.json
+d7eaca99f8df7c470801e69c7864f4b6e4d23352 data/crowns/advancement/recipes/misc/blasting/uranium_ingot_from_raw_ore.json
+6d7b2f1a2212abb87313dedff841a56c5f5139b3 data/crowns/advancement/recipes/misc/crafting/appliances/fuel_assembly.json
+07fa90e093e16ac8ddd54aeade366dc5a74a51ad data/crowns/advancement/recipes/misc/crafting/appliances/heat_exchanger.json
+c711623bea11b13da26e93720ab0bfe4a16b07dc data/crowns/advancement/recipes/misc/crafting/appliances/steam_input.json
+538820336e32b24c5a6f1023abddfd13e077f3ed data/crowns/advancement/recipes/misc/smelting/uranium_ingot_from_ore.json
+2b0448792bd2d34899111fe59131ba82ffcabcea data/crowns/advancement/recipes/misc/smelting/uranium_ingot_from_raw_ore.json
+9cb3cb049c20d2771eb5cb38b22593404c38c774 data/crowns/recipe/blasting/uranium_ingot_from_ore.json
+71095a18db3c3fdbea5203694ad95b59552666a7 data/crowns/recipe/blasting/uranium_ingot_from_raw_ore.json
+3ad19f5bba7c8cf23ff4c0f3390aaebf659ae783 data/crowns/recipe/crafting/appliances/fuel_assembly.json
+98b634f6705be5a0f242f1fb8e95366ba59d31d7 data/crowns/recipe/crafting/appliances/heat_exchanger.json
+6cc333657cad3391aedaead7fe63fe686185a106 data/crowns/recipe/crafting/appliances/steam_input.json
+85acde7b9ccbef4f10ebb9864c0541071d7ea064 data/crowns/recipe/smelting/uranium_ingot_from_ore.json
+d4ec3b4cf0cbbeb87d1806886c1bfb87ef233624 data/crowns/recipe/smelting/uranium_ingot_from_raw_ore.json

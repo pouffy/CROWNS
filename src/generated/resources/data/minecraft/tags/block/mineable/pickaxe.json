@@ -1,0 +1,12 @@
+{
+  "values": [
+    "crowns:heat_exchanger",
+    "crowns:steam_input",
+    "crowns:steam_collector",
+    "crowns:turbine_stage",
+    "crowns:compressor",
+    "crowns:fuel_assembly",
+    "crowns:deepslate_uranium_ore",
+    "crowns:uranium_ore"
+  ]
+}

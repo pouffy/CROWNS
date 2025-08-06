@@ -14,6 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.function.ToIntFunction;
+
 public class AssemblyBlock extends RotatedPillarBlock implements IBE<AssemblyBlockEntity> {
     public static final EnumProperty<Temperature> TEMPERATURE = EnumProperty.create("temperature", Temperature.class); //T*10
     public static final EnumProperty<Activity> ACTIVITY = EnumProperty.create("activity", Activity.class);
@@ -23,6 +25,23 @@ public class AssemblyBlock extends RotatedPillarBlock implements IBE<AssemblyBlo
         this.registerDefaultState(this.defaultBlockState()
                 .setValue(TEMPERATURE, Temperature.COLD)
                 .setValue(ACTIVITY,Activity.NONE));
+    }
+
+    public static ToIntFunction<BlockState> getLightEmission() {
+       return state -> {
+           switch (state.getValue(AssemblyBlock.ACTIVITY)) {
+               case NONE -> {
+                   return 0;
+               }
+               case LOW -> {
+                   return 8;
+               }
+               case HIGH -> {
+                   return 15;
+               }
+           }
+           return 0;
+       };
     }
 
     @Override

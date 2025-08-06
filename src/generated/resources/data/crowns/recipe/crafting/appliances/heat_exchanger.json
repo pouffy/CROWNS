@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "create:fluid_pipe"
+    },
+    "S": {
+      "tag": "c:plates/copper"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SPS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "crowns:heat_exchanger"
+  }
+}

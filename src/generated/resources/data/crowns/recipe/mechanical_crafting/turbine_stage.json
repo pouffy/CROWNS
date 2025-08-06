@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "create:brass_casing"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "P": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "pattern": [
+    "P P P",
+    " III ",
+    "PICIP",
+    " III ",
+    "P P P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "crowns:turbine_stage"
+  },
+  "show_notification": false
+}

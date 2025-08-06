@@ -3,6 +3,7 @@ package com.rae.crowns;
 import com.mojang.logging.LogUtils;
 import com.rae.colony_api.data.managers.FloatMapDataLoader;
 import com.rae.crowns.config.CROWNSConfigs;
+import com.rae.crowns.datagen.CROWNSDataGen;
 import com.rae.crowns.init.client.PartialModelInit;
 import com.rae.crowns.init.client.ParticleTypeInit;
 import com.rae.crowns.init.data.DataComponentsInit;
@@ -16,6 +17,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Fluid;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModLoadingContext;
@@ -56,6 +58,8 @@ public class CROWNS {
         EntityDataSerializersInit.register(modEventBus);
 
         CROWNSConfigs.registerConfigs(modLoadingContext,modContainer);
+        modEventBus.addListener(EventPriority.HIGHEST, CROWNSDataGen::gatherDataHighPriority);
+        modEventBus.addListener(EventPriority.LOWEST, CROWNSDataGen::gatherData);
         CROWNSContraptionType.prepare();
         //CreativeModeTabsInit.init();
 
@@ -72,4 +76,12 @@ public class CROWNS {
             return ResourceLocation.fromNamespaceAndPath(MODID, name);
         }
 
+    public static ResourceLocation asResource(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
     }
+
+    public static CreateRegistrate registrate() {
+        return REGISTRATE;
+    }
+
+}

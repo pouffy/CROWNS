@@ -1,0 +1,11 @@
+{
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures" : {
+		"axis":"crowns:block/turbine/axis",
+		"axis_top":"crowns:block/turbine/axis_top",
+		"rim":"crowns:block/turbine/rim",
+		"center":"crowns:block/turbine/center",
+		"blade":"crowns:block/turbine/blade"
+	}
+}
